@@ -1,4 +1,4 @@
-import { ChevronDown, Grid3x3 } from "lucide-react";
+import { ChevronDown, Grid3x3, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -78,6 +78,9 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
+          <button className="lg:hidden p-2 text-zapier-brown rounded hover:bg-gray-100 transition-colors">
+            <Menu className="w-5 h-5" />
+          </button>
           <button className="hidden md:flex items-center gap-2 px-3 py-2.5 text-sm text-zapier-brown rounded hover:bg-gray-100 transition-colors">
             <Grid3x3 className="w-4.5 h-4.5" />
             Explore apps
